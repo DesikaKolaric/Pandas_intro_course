@@ -1,0 +1,89 @@
+﻿identification,age,gender,height,weight,BMI,retired,input_number,Address
+01-001,70,...female,,94,0.61038961,Y,1,"123 Shire Lane, Shire"
+01-005,71,/female,162,92,0.567901235,Yes,2,93 West Main Street
+01-012,58,female,,85,0.505952381,No,3,298 Drugs Driveway
+01-012,58,female,168,,0.505952381,No,4,"980 Paper Avenue, Pennsylvania, 18503"
+01-014,45,,171,102,0.596491228,N,5,123 Dragons Road
+01-015,60,female/,,77,0.427777778,N,6,768 City Parkway
+01-018,72,female,162,78,0.481481481,Y,7,1209 South Street
+01-018,72,female,162,78,0.481481481,Yes,8,98 Clue Drive
+01-019,66,female,165,102,0.618181818,Yes,9,123 Middle Earth
+01-020,68,female,153,72,0.470588235,Yes,10,"25th Main Street, New York"
+01-021,77,female,165,60,0.363636364,Yes,11,"612 Shire Lane, Shire"
+01-022,70,female,158,58,0.367088608,Yes,12,2394 Hogwarts Avenue
+01-023,53,female,168,62,0.369047619,Yes,13,2039 Main Street
+01-024,69,female,157,60,0.382165605,Yes,14,343 City Parkway
+01-028,64,female,158,89,0.563291139,Yes,15,214 HR Avenue
+01-030,70,female,156,71,0.455128205,Yes,16,2395 Hogwarts Avenue
+01-031,77,female,158,87,0.550632911,Yes,17,"121 Paper Avenue, Pennsylvania"
+01-035,61,female,168,59,0.351190476,Yes,18,3498 Super Lane
+01-038,68,female,175,75,0.428571429,No,19,3498 Super Lane
+01-041,58,female,160,65,0.40625,No,20,"910 Tatooine Road, Tatooine"
+01-047,61,female,176,102,0.579545455,No,21,"910 Tatooine Road, Tatooine"
+01-050,66,female,173,70,0.404624277,No,22,1209 South Street
+01-051,58,female,162,74,0.456790123,No,23,"123 Shire Lane, Shire"
+02-002,67,female,158,76,0.481012658,Y,24,93 West Main Street
+02-007,41,female,168,84,0.5,Y,25,298 Drugs Driveway
+02-009,78,female,165,78,0.472727273,N,26,"980 Paper Avenue, Pennsylvania, 18503"
+02-010,62,female,164,79,0.481707317,N,27,123 Dragons Road
+02-014,66,female,171,85,0.497076023,N,28,768 City Parkway
+02-015,80,female,162,75,0.462962963,N,29,1209 South Street
+02-019,74,female,158,100,0.632911392,No,30,98 Clue Drive
+02-020,60,female,174,72,0.413793103,Y,31,123 Middle Earth
+02-021,65,female,158,79,0.5,No,32,"25th Main Street, New York"
+02-022,66,female,157,85,0.541401274,Yes,33,"612 Shire Lane, Shire"
+02-024,66,female,160,67,0.41875,Yes,34,2394 Hogwarts Avenue
+02-025,65,female,156,68,0.435897436,Y,35,2039 Main Street
+04-001,71,female,162,67,0.413580247,No,36,343 City Parkway
+04-002,72,female,173,95,0.549132948,Yes,37,214 HR Avenue
+04-003,60,female,173,72,0.416184971,Yes,38,2395 Hogwarts Avenue
+04-004,61,female,170,89,0.523529412,Yes,39,"121 Paper Avenue, Pennsylvania"
+04-006,38,female,160,70,0.4375,No,40,3498 Super Lane
+01-002,77,male,188,83,0.441489362,N,41,3498 Super Lane
+01-003,66,male,184,105,0.570652174,N,42,"910 Tatooine Road, Tatooine"
+01-006,75,male,174,97,0.557471264,Y,43,"910 Tatooine Road, Tatooine"
+01-007,65,male,172,100,0.581395349,Y,44,"980 Paper Avenue, Pennsylvania, 18503"
+01-008,69,male,175,128,0.731428571,Yes,45,"123 Shire Lane, Shire"
+01-009,71,male,186,77,0.413978495,Yes,46,93 West Main Street
+01-010,50,male,178,92,0.516853933,Y,47,298 Drugs Driveway
+01-011,70,male,175,73,0.417142857,N,48,"980 Paper Avenue, Pennsylvania, 18503"
+01-013,51,male,175,95,0.542857143,Yes,49,123 Dragons Road
+01-016,69,male,168,89,0.529761905,No,50,768 City Parkway
+01-017,66,male,170,85,0.5,No,51,1209 South Street
+01-025,55,male,174,88,0.505747126,No,52,98 Clue Drive
+01-026,65,male,180,78,0.433333333,No,53,123 Middle Earth
+01-027,35,male,183,81,0.442622951,N,54,"25th Main Street, New York"
+01-029,61,male,174,103,0.591954023,Yes,55,"612 Shire Lane, Shire"
+01-032,54,male,185,90,0.486486486,Yes,56,2394 Hogwarts Avenue
+01-033,56,male,180,107,0.594444444,Y,57,2039 Main Street
+01-034,67,male,175,71,0.405714286,Y,58,343 City Parkway
+01-036,65,male,173,90,0.520231214,Y,59,214 HR Avenue
+01-037,34,male,188,114,0.606382979,No,60,2395 Hogwarts Avenue
+01-039,43,male,187,81,0.43315508,Yes,61,"121 Paper Avenue, Pennsylvania"
+01-040,70,male,172,80,0.465116279,yes,62,3498 Super Lane
+01-042,73,male,168,77,0.458333333,Y,63,"910 Tatooine Road, Tatooine"
+01-043,67,male,178,86,0.483146067,yes,64,"910 Tatooine Road, Tatooine"
+01-044,76,male,174,84,0.482758621,no,65,"910 Tatooine Road, Tatooine"
+01-045,43,male,185,103,0.556756757,NO,66,214 HR Avenue
+01-046,54,male,179,85,0.474860335,NO,67,"123 Shire Lane, Shire"
+01-048,63,male,166,64,0.385542169,YES,68,"123 Shire Lane, Shire"
+01-049,62,male,186,96,0.516129032,YES,69,93 West Main Street
+02-001,46,male,185,93,0.502702703,Y,70,298 Drugs Driveway
+02-003,55,male,178,105,0.58988764,Y,71,"980 Paper Avenue, Pennsylvania, 18503"
+02-004,44,male,178,85,0.47752809,N,72,123 Dragons Road
+02-005,67,male,188,85,0.45212766,N,73,768 City Parkway
+02-006,70,male,175,62,0.354285714,No,74,1209 South Street
+02-008,74,male,178,85,0.47752809,No,75,98 Clue Drive
+02-011,53,male,200,140,0.7,Yes,76,123 Middle Earth
+02-012,62,male,182,125,0.686813187,Yes,77,"25th Main Street, New York"
+02-013,66,male,176,120,0.681818182,Yes,78,"612 Shire Lane, Shire"
+02-016,66,male,171,85,0.497076023,No,79,2394 Hogwarts Avenue
+02-017,74,male,183,94,0.513661202,No,80,2039 Main Street
+02-018,69,male,172,84,0.488372093,Yes,81,343 City Parkway
+02-027,71,male,178,85,0.47752809,No,82,214 HR Avenue
+04-005,51,male,182,85,0.467032967,N,83,2395 Hogwarts Avenue
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

@@ -1,0 +1,26 @@
+﻿identification,age,gender,height,weight,BMI,retired,input_number,Address
+01-001,70,...female,,94,0.61038961,Y,1,"123 Shire Lane, Shire"
+01-005,71,/female,162,92,0.567901235,Yes,2,93 West Main Street
+01-012,58,female,,85,0.505952381,No,3,298 Drugs Driveway
+01-012,58,female,168,,0.505952381,No,4,"980 Paper Avenue, Pennsylvania, 18503"
+01-014,45,,171,102,0.596491228,N,5,123 Dragons Road
+01-015,60,female/,,77,0.427777778,N,6,768 City Parkway
+01-018,72,female,162,78,0.481481481,Y,7,1209 South Street
+01-018,72,female,162,78,0.481481481,Yes,8,98 Clue Drive
+01-019,66,female,165,102,0.618181818,Yes,9,123 Middle Earth
+01-020,68,female,153,72,0.470588235,Yes,10,"25th Main Street, New York"
+01-021,77,female,165,60,0.363636364,Yes,11,"612 Shire Lane, Shire"
+01-022,70,female,158,58,0.367088608,Yes,12,2394 Hogwarts Avenue
+01-023,53,female,168,62,0.369047619,Yes,13,2039 Main Street
+01-024,69,female,157,60,0.382165605,Yes,14,343 City Parkway
+01-028,64,female,158,89,0.563291139,Yes,15,214 HR Avenue
+01-030,70,female,156,71,0.455128205,Yes,16,2395 Hogwarts Avenue
+01-031,77,female,158,87,0.550632911,Yes,17,"121 Paper Avenue, Pennsylvania"
+01-035,61,female,168,59,0.351190476,Yes,18,3498 Super Lane
+01-038,68,female,175,75,0.428571429,No,19,3498 Super Lane
+01-041,58,female,160,65,0.40625,No,20,"910 Tatooine Road, Tatooine"
+01-047,61,female,176,102,0.579545455,No,21,"910 Tatooine Road, Tatooine"
+01-050,66,female,173,70,0.404624277,No,22,1209 South Street
+01-051,58,female,162,74,0.456790123,No,23,"123 Shire Lane, Shire"
+02-002,67,female,158,76,0.481012658,Y,24,93 West Main Street
+02-007,41,female,168,84,0.5,Y,25,298 Drugs Driveway
