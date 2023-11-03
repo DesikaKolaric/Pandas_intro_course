@@ -51,3 +51,5 @@ Vidhi Chugh at Datacamp
 Joseph Santarcangelo at Coursera
 The Udemy academy team
 The Leetcode team
+
+An even bigger thank you to Pedro A. Sánchez Murcia, PhD and Iva Pritišanac, PhD for the opportunity to spread my knowledge!
