@@ -40,13 +40,13 @@ import pandas as pd
 # Below is an example of how to store some data in pandas Series:
 
 doses_batch1 = [1, 5, 6, 8, 10]    # to define series from a list of numbers 
-doses = {'sample1' : 1, 'sample2': 5, 'sample3': 6, 'sample4': 8, 'sample5': 10} # to define series from a dictionary
 
 series1 = pd.Series(data = doses_batch1)
 print(series1)
 series2 = pd.Series(data = doses_batch1, index = ['a', 'b', 'c', 'd', 'e'])
 print(series2)
 
+doses = {'sample1' : 1, 'sample2': 5, 'sample3': 6, 'sample4': 8, 'sample5': 10} # to define series from a dictionary
 series3 = pd.Series(data = doses)
 print(series3)
 series4 = pd.Series(data = doses, index = ['a', 'b', 'c', 'd', 'e'])
@@ -79,6 +79,8 @@ print(df2)
 
 # defining a DataFrame from pandas Series:
 df3 = pd.DataFrame(series3)
+# Notice how we automatically got a header row with the column labels and, since we didn't specifically define what we want our column labels to be, they are automatically assigned names
+# that correspond to their indices (first column is names '0', second column '1', etc.)
 
 # If I'm only interested in the first 3 samples:
 df4 = pd.DataFrame(series3, index = ['sample1', 'sample2', 'sample3'])
@@ -151,8 +153,8 @@ patient_data.head(10)
 patient_data.tail() # if we don't specify the number of rows we want to see, the .tail() function by default prints the last 5 rows
 patient_data.tail(10)
 
-# .shape() function enables us to check how many rows and columns our dataframe consists of:
-patient_data.shape()    # the output is given as a pair of values, for example (2,3) in which the first value stands for the number of rows and the second value for the number of columns in 
+# .shape function enables us to check how many rows and columns our dataframe consists of:
+patient_data.shape    # the output is given as a pair of values, for example (2,3) in which the first value stands for the number of rows and the second value for the number of columns in 
                         # our dataframe. In case there is only one column, the shape will be (2,)
 
 # .info() function allows us to see some additional information such as data type of values in each column, the number of NaNs in each column, etc. 
@@ -253,8 +255,10 @@ finally_no_nan.isnull().any()
 # twice.
 # First let's check if there's any duplicates in the first few rows of our dataframe:
 finally_no_nan.head(10)
+finally_no_nan.shape
 # We can spot two duplicates right away. Now to remove those duplicates, we can simply say:
-finally_no_nan.drop_duplicates(inplace = True) 
+finally_no_nan.drop_duplicates(inplace = True)
+finally_no_nan.shape
 # The inplace = True variable tells the drop_duplicates function to do it on our original finally_no_nan dataframe and not to create a new dataframe with 
 # these changes. If we don't specify inplace = True, the finally_no_duplicates dataframe will not be changed and in that case we need to save the changes in the new dataframe, for example like this:
 # new_df = finally_no_nan.drop_duplicates(). Many functions in pandas have the inplace variable which can be called and set to True when using these functions, but it's important to first check in the
@@ -288,13 +292,13 @@ finally_no_nan.tail(10)
 
 # In other cases, we might want to add an additional column. For example, in our dataframe we have a column named BMI and we could add an additional column where we would indicate for each patient whether 
 # she/he is overweight (BMI > 25) or not. This is how we can do it:
-finally_no_nan['overweight'] = finally_no_nan['BMI'].apply(lambda x: 'Yes' if x > 25.0 else 'No') # The apply function in pandas is used when we want to iterate over each data point in our dataframe and 
+finally_no_nan['overweight'] = finally_no_nan['BMI'].apply(lambda x: 'Yes' if x > 0.54 else 'No') # The apply function in pandas is used when we want to iterate over each data point in our dataframe and 
 # use it in some function. For example, here we used it with a simple if statement, saying if the current value from the 'BMI' column is larger than 25.0, write 'Yes' in the newly formed column 'overweight',
 # otherwise, write 'No'. In general, when we want to add a new column to our dataframe, we do it by saying dataframe['column name'] - if the column with that name doesn't exist, this function will create it.
 finally_no_nan.head(10)
 
 # We can also add a new row to our dataframe. In order to do that, we need to know the values for all columns of the new data point and we need to represent it in the form of a dictionary:
-new_datapoint = {'patient_id': '05_001', 'age': 76, 'sex': 'female', 'height': 170, 'weight': 60, 'BMI': 21.33, 'overweight': 'No'}
+new_datapoint = {'patient_id': '05_001', 'age': 76, 'sex': 'female', 'height': 170, 'weight': 60, 'BMI': 0.33, 'retired': 'No', 'Address': '123 Middle Earth',  'overweight': 'No'}
 finally_no_nan = finally_no_nan.append(new_datapoint, ignore_index=True)
 finally_no_nan.tail(10)
 
@@ -306,11 +310,11 @@ finally_no_nan.head(10)
 # function. The .strip() function can be applied to the whole dataframe, or to a specific column. You will almost always want to do column by column because removing for example '-' from one column might 
 # cause errors and we might not actually want that. Additionally, in order to be more specific, we can also define whether we want the .strip() function to strip some characters from the beginning of our strings
 # or the end. We do this by using .lstrip() to strip from the beginning (left side of the string) or .rstrip() to strip from the end of the string (right side of the string).
-finally_no_nan['sex'].lstrip("...")
+finally_no_nan['sex'] = finally_no_nan['sex'].str.lstrip("...")
 finally_no_nan.head(10)
-finally_no_nan['sex'].lstrip("/")
+finally_no_nan['sex'] = finally_no_nan['sex'].str.lstrip("/")
 finally_no_nan.head(10)
-finally_no_nan['sex'].rstrip("/")
+finally_no_nan['sex'] = finally_no_nan['sex'].str.rstrip("/")
 finally_no_nan.head(10)
 
 

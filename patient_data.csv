@@ -1,12 +1,12 @@
 ﻿identification,age,gender,height,weight,BMI,retired,input_number,Address
 01-001,70,...female,,94,0.61038961,Y,1,"123 Shire Lane, Shire"
-01-005,71,/female,162,92,0.567901235,Yes,2,93 West Main Street
-01-012,58,female,,85,0.505952381,No,3,298 Drugs Driveway
-01-012,58,female,168,,0.505952381,No,4,"980 Paper Avenue, Pennsylvania, 18503"
-01-014,45,,171,102,0.596491228,N,5,123 Dragons Road
-01-015,60,female/,,77,0.427777778,N,6,768 City Parkway
-01-018,72,female,162,78,0.481481481,Y,7,1209 South Street
-01-018,72,female,162,78,0.481481481,Yes,8,98 Clue Drive
+01-005,71,/female,162,,0.567901235,Yes,2,93 West Main Street
+01-012,58,female,168,85,0.505952381,No,3,"980 Paper Avenue, Pennsylvania, 18503"
+01-012,58,female,168,85,0.505952381,No,3,"980 Paper Avenue, Pennsylvania, 18503"
+01-014,45,,,102,0.596491228,N,5,123 Dragons Road
+01-015,60,female/,,77,0.427777778,Y,6,768 City Parkway
+01-018,72,female,162,78,0.481481481,Yes,7,98 Clue Drive
+01-018,72,female,162,78,0.481481481,Yes,7,98 Clue Drive
 01-019,66,female,165,102,0.618181818,Yes,9,123 Middle Earth
 01-020,68,female,153,72,0.470588235,Yes,10,"25th Main Street, New York"
 01-021,77,female,165,60,0.363636364,Yes,11,"612 Shire Lane, Shire"
@@ -82,8 +82,3 @@
 02-018,69,male,172,84,0.488372093,Yes,81,343 City Parkway
 02-027,71,male,178,85,0.47752809,No,82,214 HR Avenue
 04-005,51,male,182,85,0.467032967,N,83,2395 Hogwarts Avenue
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
