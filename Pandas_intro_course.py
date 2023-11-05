@@ -436,11 +436,11 @@ finally_no_nan
 ## 3.6. Groupby function
 # As a last exercise in this section on data manipulation, let's say we want to separately look at male and female patients.
 # In order to separate the dataframe so that it first shows as all male patients and then all female, we are going to use the .groupby() function:
-grouped_df = finally_no_nan.groupby('sex').reset_index()
+grouped_df = finally_no_nan.groupby(['sex']).sum().reset_index()
 grouped_df
 # The reset_index() function is used to reset the index of a grouped DataFrame, creating a new DataFrame with a default integer index. If we don't
-# write the reset_index() function, the output of grouped_df would not a be a formed dataframe, but will rahter look like this: 
-# <pandas.core.groupby.generic.DataFrameGroupBy - it would just store the type of object of variable grouped_df
+# write the reset_index() function, the indices of grouped_df would be the 'sex' variables - so the 'male' and 'female' would be the indices, but if we 
+# specify the reset_index(), the 'male' and 'female' are stored in a column and the indices are set to integers (o, 1, 2...)
 
 #### 4. WORKING WITH MULTIPLE DATAFRAMES:
 # Often times in our work we need to work with multiple dataframes. It can happen that the data was collected on two separate computers ad now you want
@@ -459,8 +459,8 @@ clinical_data = pd.read_csv('clinical_data.csv', sep = ',', index_col = None, he
 patient_data_cols.head(10)
 clinical_data.head(10)
 # We can also check their column labels by:
-patient_data_cols.columns()
-clinical_data.columns()
+patient_data_cols.columns
+clinical_data.columns
 # We can see that there are some columns mutual to both dataframes (indentification and gender), which makes it possible for us to merge those two dataframes into one.
 # The .merge() function basically takes one dataframe and pastes it to the left or right to the other dataframe - so we are adding new columns. Later we will work with 
 # the function .concat(), which does the oposite: it takes one dataframe and pastes it below the other one, thereby adding new rows to the same dataframe.
@@ -492,7 +492,7 @@ general_data_2.shape
 # Now let's concatanate them:
 concatenated_df = pd.concat([general_data_1, general_data_2], ignore_index=True)
 # The .concat() function already has a built in feature that takes care of your headers so that the header of the second dataframe is removed and only the one 
-# at the very beginning remains in the concatanated dataframe. The .reset_index() creates new indices for the new concatanated dataframe. Let's visually inspect
+# at the very beginning remains in the concatanated dataframe. The .ignore_index() creates new indices for the new concatanated dataframe. Let's visually inspect
 # the concatanated_df and check its shape:
 concatenated_df.head(15)
 concatenated_df.shape

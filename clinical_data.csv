@@ -1,4 +1,5 @@
-﻿01-001,female,highschool,retired,chest_discomfort
+﻿identification,gender,education,employment,symptom
+01-001,female,highschool,retired,chest_discomfort
 01-002,male,PhD,retired,palpitations
 01-003,male,bachelor_master,retired,vertigo
 01-004,female,highschool,retired,palpitations
@@ -79,4 +80,3 @@
 04-004,female,highschool,employed,palpitations
 04-005,male,bachelor_master,employed,palpitations
 04-006,female,highschool,employed,chest_discomfort
-identification,gender,education,employment,symptom
